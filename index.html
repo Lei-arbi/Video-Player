@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>José Rizal University Video Player</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="video.css">
+</head>
+<body>
+  <div class="container">
+    <div class="main-content">
+      <div class="player-header">
+        <div class="logo-spot">
+          <img src="rizal.png" alt="José Rizal University Logo" class="jru-logo">
+        </div>
+        <div class="title">Talentong Rizal</div>
+      </div>
+      <div class="video-frame">
+        <!-- Removed 'muted' for unmuted autoplay (may require user interaction in most browsers) -->
+        <video id="mainVideo" controls autoplay poster="video-poster.jpg">
+          <source src="rex.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="custom-controls">
+          <button id="playBtn" class="control-btn">Play</button>
+          <button id="pauseBtn" class="control-btn">Pause</button>
+          <button id="stopBtn" class="control-btn">Stop</button>
+          <div class="progress-bar" id="progressBar">
+            <div class="progress" id="progress" style="width:0%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="side-panel">
+      <div class="members-title">Leader</div>
+      <div class="member-list">
+        <div class="member leader">
+          <img src="formal pic (1).jpg" alt="Arbilon John Lei">
+          <div class="member-name">Arbilon John Lei</div>
+        </div>
+      </div>
+      <div class="members-title" style="margin-top:30px;">Members</div>
+      <div class="member-list">
+        <div class="member">
+          <img src="alegre.jpg" alt="Abel Alegre">
+          <div class="member-name">Abel Legre</div>
+        </div>
+        <div class="member">
+          <img src="Migz.jpg" alt="Migz Velasquez">
+          <div class="member-name">Migz Velasquez</div>
+        </div>
+        <div class="member">
+          <img src="migmig.jpg" alt="Lucas Miguel Camacho">
+          <div class="member-name">Lucas Miguel Camacho</div>
+        </div>
+        <div class="member">
+          <img src="member5.jpg" alt="Andrei Sombrano">
+          <div class="member-name">Andrei Sombrano</div>
+        </div>
+        <div class="member">
+          <img src="member6.jpg" alt="Andre Arenas">
+          <div class="member-name">Andre Arenas</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="video.js"></script>
+</body>
+</html>
